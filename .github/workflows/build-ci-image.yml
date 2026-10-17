@@ -24,7 +24,6 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build-image:
-    if: github.repository_owner == 'tinyhumansai'
     name: Build and push CI image
     runs-on: ubuntu-latest
     timeout-minutes: 30
